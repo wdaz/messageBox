@@ -1,0 +1,10 @@
+<div class="message-box">
+  <ul>
+    <li *ngFor="let message of messages">
+      <span>
+        <ng-template [ngIf]="message.isDelected">x</ng-template>
+      </span>
+      {{ message.message }}
+    </li>
+  </ul>
+</div>

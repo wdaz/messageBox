@@ -1,0 +1,20 @@
+<form class="message-send" [formGroup]="form" (ngSubmit)="send()">
+  <mat-form-field class="message-send__box">
+    <input
+      matInput
+      type="text"
+      #messageBox
+      name="message"
+      placeholder="Please enter message"
+      formControlName="sendInput"
+    />
+  </mat-form-field>
+  <button
+    [disabled]="isDisable()"
+    type="submit"
+    mat-raised-button
+    color="primary"
+  >
+    Send
+  </button>
+</form>

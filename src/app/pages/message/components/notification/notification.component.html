@@ -1,0 +1,10 @@
+<div class="message-notification">
+  <ng-template [ngIf]="message">
+    <button mat-mini-fab color="warn" (click)="delete(message.id)">
+      <mat-icon>clear</mat-icon>
+    </button>
+    <div class="notification">
+      {{ message.message }}
+    </div>
+  </ng-template>
+</div>

@@ -1,0 +1,10 @@
+<div class="message">
+  <app-notification
+    [message]="message"
+    (deleteEvent)="delete($event)"
+  ></app-notification>
+
+  <app-message-box [messages]="messages"></app-message-box>
+
+  <app-send-box (sendEvent)="send($event)"></app-send-box>
+</div>
